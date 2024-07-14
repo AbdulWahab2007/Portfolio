@@ -12,9 +12,9 @@ export default function Navbar() {
                 </div>
                 <div className="right">
                     <Link onClick={() => SetisActive(0)} className={isActive == 0 ? "links active" : "links"} to="/"><div className="spancontainer"><span class="material-symbols-outlined">person</span></div>About me</Link>
-                    <Link onClick={() => SetisActive(1)} className={isActive == 1 ? "links active" : "links"} to="/"><div className="spancontainer"><span class="material-symbols-outlined">engineering</span></div>Skills</Link>
-                    <Link onClick={() => SetisActive(2)} className={isActive == 2 ? "links active" : "links"} to="/"><div className="spancontainer"><span class="material-symbols-outlined">dashboard</span></div>Projects</Link>
-                    <Link onClick={() => SetisActive(3)} className={isActive == 3 ? "links active" : "links"} to="/"><div className="spancontainer"><span class="material-symbols-outlined">call</span></div>Contact me</Link>
+                    <Link onClick={() => SetisActive(1)} className={isActive == 1 ? "links active" : "links"} to="/skills"><div className="spancontainer"><span class="material-symbols-outlined">engineering</span></div>Skills</Link>
+                    <Link onClick={() => SetisActive(2)} className={isActive == 2 ? "links active" : "links"} to="/projects"><div className="spancontainer"><span class="material-symbols-outlined">dashboard</span></div>Projects</Link>
+                    <Link onClick={() => SetisActive(3)} className={isActive == 3 ? "links active" : "links"} to="/contact"><div className="spancontainer"><span class="material-symbols-outlined">call</span></div>Contact me</Link>
                 </div>
             </Container>
         </>
@@ -25,6 +25,7 @@ const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: white;
         width: 100%;
         height: 80px;
         .left{

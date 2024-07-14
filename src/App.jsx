@@ -10,15 +10,23 @@ import {
   Navigate,
 } from "react-router-dom";
 import AboutMe from './components/AboutMe';
+import MySkills from './components/MySkills';
 
 export default function App() {
   return (
     <>
-      <Routes>
-      </Routes>
       <GlobalCSS />
       <Navbar />
-      <AboutMe/>
+      <Routes>
+        <Route path="/" element={<AboutMe />}>
+        </Route>
+        <Route path="/skills" element={<MySkills />}>
+        </Route>
+        <Route path="/projects" element={<MySkills />}>
+        </Route>
+        <Route path="/contact" element={<MySkills />}>
+        </Route>
+      </Routes>
     </>
   )
 }
