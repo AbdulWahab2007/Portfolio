@@ -64,7 +64,7 @@ const Container = styled.div`
             }
         }
         h3{
-            margin-top: 0px;
+            margin-top: 23px;
             font-size: 34px;
             color: #3d85c6;
             font-family: "Gulzar", serif;

@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import AboutMe from './components/AboutMe';
 import MySkills from './components/MySkills';
+import Projects from './components/Projects';
 
 export default function App() {
   return (
@@ -22,7 +23,7 @@ export default function App() {
         </Route>
         <Route path="/skills" element={<MySkills />}>
         </Route>
-        <Route path="/projects" element={<MySkills />}>
+        <Route path="/projects" element={<Projects />}>
         </Route>
         <Route path="/contact" element={<MySkills />}>
         </Route>
