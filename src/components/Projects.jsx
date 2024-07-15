@@ -27,7 +27,7 @@ export default function Projects() {
                     </div>
                     <div className='ProjectContainer'>
                         <ProjectCard title="Twitter Clone" description="An exact replica of Twitter, offering all its features and functionalities." image="/src/assets/Twitter.png" link='https://github.com/AbdulWahab2007/Twitter-Clone' />
-                        <ProjectCard title="TicTacToe" description="An authentic recreation of Tic Tac Toe with traditional gameplay mechanics." image="/src/assets/3Ts.png" link='https://github.com/AbdulWahab2007/TicTacToe' />
+                        <ProjectCard title="Tic Tac Toe  " description="An authentic recreation of Tic Tac Toe with traditional gameplay mechanics." image="/src/assets/3Ts.png" link='https://github.com/AbdulWahab2007/TicTacToe' />
                     </div>
                 </Container>
             </AnimatedPage>
@@ -47,6 +47,7 @@ const Container = styled.div`
             a{
                 margin: 15px 0px 0px 50px;
                 text-decoration: none;
+                width: 159px;
             }
 
             .btn-37,

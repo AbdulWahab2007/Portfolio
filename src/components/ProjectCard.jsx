@@ -5,7 +5,6 @@ export default function ProjectCard(props) {
   return (
     <>
       <Container>
-        <div className="image" style={{ backgroundImage: `url(${props.image})` }}></div>
         <div className="content">
           <h2>{props.title}</h2>
           <p>{props.description}</p>
@@ -17,60 +16,74 @@ export default function ProjectCard(props) {
             </button>
           </a>
         </div>
+        <div className="image" style={{ backgroundImage: `url(${props.image})` }}></div>
       </Container>
     </>
   )
 }
 
 const Container = styled.div`
+        background-color: #3d85c6;
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 75%;
-        height: 270px;
+        width: 90%;
+        height: 250px;
         margin: 30px 0px 0px 0px;
-        border-radius: 5px;
+        border-radius: 200px;
         border: 1px solid #808080;
+        transition: all .2s;
+        &:hover{
+          transform: scale(1.05);
+        }
         .image{
-          position: absolute;
-          width: 37.5%;
-          height: 270px;
+          width: 33%;
+          height: 250px;
           background-size: cover;
           background-repeat: no-repeat;
-          border-radius: 5px;
-        border: 1px solid black;
-      }
+          border-radius: 0px 200px 200px 0px;
+        }
         .content{
           z-index: 100;
           display: flex;
           flex-direction: column;
-          width: 100%;
-          height: 270px;
-          align-items: center;
-          justify-content: center;
-          background-color: rgba(0, 0, 0, 0.6);
+          width: 67%;
+          height: 250px;
+          padding-top: 30px;
           transition: all .2s;
           h2{
             color: white;
-            margin: 0px 0px 0px 0px;
-            font-size: 34px;
+            margin: 0px 0px 0px 60px;
+            font-size: 29px;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;
             font-style: normal;
+            width: 50%;
+            padding: 5px;
+            border-radius: 5px;
           }
           p{
             color: white;
             font-size: 16px;
-            margin: 15px 0px 0px 40px;
+            margin: 5px 0px 0px 60px;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 800;
             font-style: normal;
+            width: 80%;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            align-items: center;
           }
         }
-        .content:hover{
-          background-color: rgba(0, 0, 0, 0.3);
+        a{
+          display: flex;
+          text-decoration: none;
+          width: 39%;
+          padding: 0px;
+          margin: 20px 0px 0px 60px;
         }
 //Button is used from UI snippets
 .btn-31,
@@ -99,7 +112,7 @@ transparent;
   font-size: 100%;
   font-weight: 900;
   line-height: 1.5;
-  margin: 10px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
