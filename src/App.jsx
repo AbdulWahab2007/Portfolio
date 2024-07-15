@@ -12,6 +12,7 @@ import {
 import AboutMe from './components/AboutMe';
 import MySkills from './components/MySkills';
 import Projects from './components/Projects';
+import Contacts from './components/Contacts';
 
 export default function App() {
   return (
@@ -25,7 +26,7 @@ export default function App() {
         </Route>
         <Route path="/projects" element={<Projects />}>
         </Route>
-        <Route path="/contact" element={<MySkills />}>
+        <Route path="/contact" element={<Contacts />}>
         </Route>
       </Routes>
     </>
