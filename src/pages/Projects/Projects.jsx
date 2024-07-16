@@ -31,8 +31,8 @@ export default function Projects() {
             </a>
           </div>
           <div className='ProjectContainer'>
-            <ProjectCard title="Twitter Clone" description="An exact replica of Twitter, offering all its features and functionalities." image="/src/assets/Twitter.png" link='https://github.com/AbdulWahab2007/Twitter-Clone' weblink='#' />
-            <ProjectCard title="Tic Tac Toe  " description="An authentic recreation of Tic Tac Toe with traditional gameplay mechanics." image="/src/assets/3Ts.png" link='https://github.com/AbdulWahab2007/TicTacToe' weblink='https://3ts.surge.sh' />
+            <ProjectCard title="Twitter Clone" description="An exact replica of Twitter, offering all its features and functionalities." image="/src/assets/Twitter.png" link='https://github.com/AbdulWahab2007/Twitter-Clone' weblink='#' available='false' />
+            <ProjectCard title="Tic Tac Toe  " description="An authentic recreation of Tic Tac Toe with traditional gameplay mechanics." image="/src/assets/3Ts.png" link='https://github.com/AbdulWahab2007/TicTacToe' weblink='https://3ts.surge.sh' available='true' />
           </div>
         </Container>
       </AnimatedPage>

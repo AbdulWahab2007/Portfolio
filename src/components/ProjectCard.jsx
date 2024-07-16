@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { Context } from '/src/GlobalContext'
+import { Link } from 'react-router-dom'
 
 export default function ProjectCard(props) {
   const { handleUnavailable } = useContext(Context);
@@ -11,20 +12,27 @@ export default function ProjectCard(props) {
           <h2>{props.title}</h2>
           <p>{props.description}</p>
           <div className="btnContainer">
-            <a href={props.link} target='_blank'>
+            <Link to={props.link} target='_blank'>
               <button className="btn-31">
                 <span className="text-container">
                   <span className="text">View on GitHub</span>
                 </span>
               </button>
-            </a>
-            <a href={props.weblink} target='_blank'>
-              <button className="btn-31">
-                <span className="text-container">
-                  <span className="text">Try It Out ==&gt;</span>
-                </span>
-              </button>
-            </a>
+            </Link>
+
+            {props.available == 'true' ? (
+              <Link to={props.weblink} target='_blank'>
+                <button className="btn-31">
+                  <span className="text-container">
+                    <span className="text">Try It Out ==&gt;</span>
+                  </span>
+                </button>
+              </Link>
+            ) : (<button className="btn-31" onClick={handleUnavailable}>
+              <span className="text-container">
+                <span className="text">Try It Out ==&gt;</span>
+              </span>
+            </button>)}
           </div>
         </div>
         <div className="image" style={{ backgroundImage: `url(${props.image})` }}></div>

@@ -14,11 +14,13 @@ import AboutMe from './pages/About/AboutMe';
 import MySkills from './pages/Skills/MySkills';
 import Projects from './pages/Projects/Projects';
 import Contacts from './pages/Contact/Contacts';
+import { Toaster } from 'sonner';
 
 export default function App() {
   return (
     <>
       <Provider>
+        <Toaster position="top-center" richColors />
         <GlobalCSS />
         <Navbar />
         <Routes>
