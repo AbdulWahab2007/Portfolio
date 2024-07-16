@@ -23,55 +23,119 @@ export default function Navbar() {
 }
 
 const Container = styled.div`
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        width: 100%;
-        height: 80px;
-        .left{
-            width: 40%;
+
+        @media (max-width: 1300px) {
             display: flex;
-            height: 80px;
-        }
-        .right{
-            width: 60%;
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 50px;
-        }
-        .links{
-            display: flex;
-            text-decoration: none;
-            color: #12273b;
-            font-size: 17px;
-            font-family: "Nunito", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 600;
-            font-style: normal;
-            margin: 0px 20px 0px 20px;
-        }
-        .spancontainer{
-            margin-right: 5px;
-        }
-        .links:hover{
-            text-shadow: 1px 1px 4px #EAEAEA;
-        }
-        .active{
-            font-weight: 700;
-            border-bottom: 2px solid #3d85c6;
-            span{
-                color: #3d85c6;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            background-color: white;
+                .left{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 25%;
+                    height: 50px;
+                }
+                .right{
+                    width: 75%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                .links{
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #12273b;
+                    font-size: 0.8em;
+                    font-family: "Nunito", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+                    margin: 0px 5px 0px 4px;
+                }
+                .links:hover{
+                    text-shadow: 1px 1px 4px #EAEAEA;
+                }
+                .active{
+                    margin-top: 2px;
+                    font-weight: 700;
+                    border-bottom: 2px solid #3d85c6;
+                    span{
+                        color: #3d85c6;
+                    }
             }
+                .spancontainer{
+                    margin-right: 3px;
+                }
+                span{
+                    font-size: 1.4em;
+                    margin: 4px 0px 0px 0px;
+                }
+                h3{
+                    margin: 3px 0px 0px 0px;
+                    font-size: 1.4em;
+                    color: #3d85c6;
+                    font-family: "Gulzar", serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    user-select: none;
+                }
         }
-        h3{
-            margin-top: 23px;
-            font-size: 34px;
-            color: #3d85c6;
-            font-family: "Gulzar", serif;
-            font-weight: 600;
-            font-style: normal;
-            user-select: none;
-            margin-left: 50px;
+        @media (min-width : 1300px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+            height: 80px;
+            .left{
+                width: 40%;
+                display: flex;
+                height: 80px;
+            }
+            .right{
+                width: 60%;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 50px;
+            }
+            .links{
+                display: flex;
+                text-decoration: none;
+                color: #12273b;
+                font-size: 17px;
+                font-family: "Nunito", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+                margin: 0px 20px 0px 20px;
+            }
+            .spancontainer{
+                margin-right: 5px;
+            }
+            .links:hover{
+                text-shadow: 1px 1px 4px #EAEAEA;
+            }
+            .active{
+                font-weight: 700;
+                border-bottom: 2px solid #3d85c6;
+                span{
+                    color: #3d85c6;
+                }
+            }
+            h3{
+                margin-top: 23px;
+                font-size: 34px;
+                color: #3d85c6;
+                font-family: "Gulzar", serif;
+                font-weight: 600;
+                font-style: normal;
+                user-select: none;
+                margin-left: 50px;
+            }
         }
 `

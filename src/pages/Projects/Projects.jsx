@@ -41,6 +41,153 @@ export default function Projects() {
 }
 
 const Container = styled.div`
+    @media (max-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+        .contentContainer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .btn-37,
+            .btn-37 *,
+            .btn-37 :after,
+            .btn-37 :before,
+            .btn-37:after,
+            .btn-37:before {
+              border: 0 solid;
+              box-sizing: border-box;
+            }
+            .btn-37 {
+              -webkit-tap-highlight-color: 
+            transparent;
+              -webkit-appearance: button;
+              appearance: button;
+              background-color: 
+            #fff;
+              background-image: none;
+              color: 
+            #000;
+              cursor: pointer;
+              font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+                Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+              font-size: 100%;
+              font-weight: 900;
+              line-height: 1.5;
+              margin: 0;
+              -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+              mask-image: -webkit-radial-gradient(#fff, #000);
+              padding: 0;
+            }
+            .btn-37:disabled {
+              cursor: default;
+            }
+            .btn-37:-moz-focusring {
+              outline: auto;
+            }
+            .btn-37 svg {
+              display: block;
+            }
+            .btn-37 [hidden] {
+              display: none;
+            }
+            .btn-37 {
+              border: 1px solid;
+              box-sizing: border-box;
+              display: block;
+              overflow: hidden;
+              padding: 0.6rem 2rem;
+              margin: 10px 0px 0px 30px;
+              border-radius: 5px;
+              position: relative;
+              text-transform: uppercase;
+            }
+            .btn-37 .new,
+            .btn-37 .old span {
+              font-weight: 900;
+              transition: transform 0.2s;
+            }
+            .btn-37 .new {
+              display: block;
+              transform: scale(0);
+            }
+            .btn-37:hover .new {
+              transform: scale(1);
+            }
+            .btn-37 .old,
+            .btn-37 .old span {
+              inset: 0;
+              position: absolute;
+            }
+            .btn-37 .old span {
+              background: 
+            #000;
+              color: 
+            #fff;
+              display: block;
+              display: grid;
+              place-items: center;
+            }
+            .btn-37 .old span:first-child {
+              -webkit-clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+              clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+            }
+            .btn-37 .old span:nth-child(2) {
+              -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+              clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+            }
+            .btn-37:hover .old span:first-child {
+              transform: translateY(-100%);
+            }
+            .btn-37:hover .old span:nth-child(2) {
+              transform: translateY(100%);
+            }
+        }
+        a{
+          text-decoration: none;
+        }
+        .greeting{
+            color: black;
+            font-size: 1.2em;
+            margin: 20px 0px 0px 30px;
+        }
+        p{
+            margin: 0px 0px 10px 30px;
+            font-size: 1em;
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            color: #7d7c7c;
+        }
+        .headings{
+            display: flex;
+            margin: 10px 0px 5px 30px;
+        }
+        h1{
+            font-size: 2em;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .name{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            color: #3d85c6;
+        }
+        .ProjectContainer{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+    }
+    @media (min-width: 1300px) {
+      
+    
         display: flex;
         width: 100%;
         height: 100vh;
@@ -54,100 +201,98 @@ const Container = styled.div`
                 text-decoration: none;
                 width: 159px;
             }
-
             .btn-37,
-.btn-37 *,
-.btn-37 :after,
-.btn-37 :before,
-.btn-37:after,
-.btn-37:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-.btn-37 {
-  -webkit-tap-highlight-color: 
-transparent;
-  -webkit-appearance: button;
-  appearance: button;
-  background-color: 
-#fff;
-  background-image: none;
-  color: 
-#000;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
-  mask-image: -webkit-radial-gradient(#fff, #000);
-  padding: 0;
-}
-.btn-37:disabled {
-  cursor: default;
-}
-.btn-37:-moz-focusring {
-  outline: auto;
-}
-.btn-37 svg {
-  display: block;
-}
-.btn-37 [hidden] {
-  display: none;
-}
-.btn-37 {
-  border: 1px solid;
-  box-sizing: border-box;
-  display: block;
-  overflow: hidden;
-  padding: 0.6rem 2rem;
-  position: relative;
-  text-transform: uppercase;
-}
-.btn-37 .new,
-.btn-37 .old span {
-  font-weight: 900;
-  transition: transform 0.2s;
-}
-.btn-37 .new {
-  display: block;
-  transform: scale(0);
-}
-.btn-37:hover .new {
-  transform: scale(1);
-}
-.btn-37 .old,
-.btn-37 .old span {
-  inset: 0;
-  position: absolute;
-}
-.btn-37 .old span {
-  background: 
-#000;
-  color: 
-#fff;
-  display: block;
-  display: grid;
-  place-items: center;
-}
-.btn-37 .old span:first-child {
-  -webkit-clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
-  clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
-}
-.btn-37 .old span:nth-child(2) {
-  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-}
-.btn-37:hover .old span:first-child {
-  transform: translateY(-100%);
-}
-.btn-37:hover .old span:nth-child(2) {
-  transform: translateY(100%);
-}
-
+            .btn-37 *,
+            .btn-37 :after,
+            .btn-37 :before,
+            .btn-37:after,
+            .btn-37:before {
+              border: 0 solid;
+              box-sizing: border-box;
+            }
+            .btn-37 {
+              -webkit-tap-highlight-color: 
+            transparent;
+              -webkit-appearance: button;
+              appearance: button;
+              background-color: 
+            #fff;
+              background-image: none;
+              color: 
+            #000;
+              cursor: pointer;
+              font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+                Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+              font-size: 100%;
+              font-weight: 900;
+              line-height: 1.5;
+              margin: 0;
+              -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+              mask-image: -webkit-radial-gradient(#fff, #000);
+              padding: 0;
+            }
+            .btn-37:disabled {
+              cursor: default;
+            }
+            .btn-37:-moz-focusring {
+              outline: auto;
+            }
+            .btn-37 svg {
+              display: block;
+            }
+            .btn-37 [hidden] {
+              display: none;
+            }
+            .btn-37 {
+              border: 1px solid;
+              box-sizing: border-box;
+              display: block;
+              overflow: hidden;
+              padding: 0.6rem 2rem;
+              position: relative;
+              text-transform: uppercase;
+            }
+            .btn-37 .new,
+            .btn-37 .old span {
+              font-weight: 900;
+              transition: transform 0.2s;
+            }
+            .btn-37 .new {
+              display: block;
+              transform: scale(0);
+            }
+            .btn-37:hover .new {
+              transform: scale(1);
+            }
+            .btn-37 .old,
+            .btn-37 .old span {
+              inset: 0;
+              position: absolute;
+            }
+            .btn-37 .old span {
+              background: 
+            #000;
+              color: 
+            #fff;
+              display: block;
+              display: grid;
+              place-items: center;
+            }
+            .btn-37 .old span:first-child {
+              -webkit-clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+              clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+            }
+            .btn-37 .old span:nth-child(2) {
+              -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+              clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+            }
+            .btn-37:hover .old span:first-child {
+              transform: translateY(-100%);
+            }
+            .btn-37:hover .old span:nth-child(2) {
+              transform: translateY(100%);
+            }
         }
         .greeting{
             color: black;
@@ -185,8 +330,8 @@ transparent;
             display: flex;
             flex-direction: column;
             align-items: center;
-            align-items: center;
             padding-top: 30px;
             width: 50%;
         }
+    }    
 `

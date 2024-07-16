@@ -30,6 +30,65 @@ export default function MySkills() {
 }
 
 const Container = styled.div`
+    @media (max-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+        .ImgContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0px 0px 0px;
+        }
+        img{
+            width: 275px;
+            border-radius: 5px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 10px;
+        }
+        .greeting{
+            color: black;
+            font-size: 1.2em;
+            font-family: "Gulzar", serif;
+            font-weight: 600;
+            font-style: normal;
+            margin: 15px 0px 10px 30px;
+        }
+        p{
+            margin: 5px 0px 10px 30px;
+            font-size: 1em;
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            color: #7d7c7c;
+        }
+        .headings{
+            display: flex;
+            margin: 5px 0px 5px 30px;
+        }
+        h1{
+            font-size: 2em;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .name{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            color: #3d85c6;
+        }
+    }
+    @media (min-width: 1300px) {
+        
+    
         display: flex;
         width: 100%;
         padding-top: 100px;
@@ -87,4 +146,5 @@ const Container = styled.div`
             border-radius: 5px;
             margin-top: -50px;
         }
+    }    
 `
