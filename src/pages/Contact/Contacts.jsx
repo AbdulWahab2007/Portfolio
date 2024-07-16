@@ -68,7 +68,7 @@ const Container = styled.div`
             margin: 0px 0px 0px 30px;
         }
         h1{
-            font-size: 2em;
+            font-size: 1.6em;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;
@@ -83,10 +83,11 @@ const Container = styled.div`
         }
         .address{
             background-color: rgba(4, 52, 94, 0.1);
+            width: 210px;
             border-radius: 5px;
             user-select: none;
-            margin: 0px 0px 5px -10px;
-            font-size: 0.85em;
+            margin: 0px 0px 5px 5px;
+            font-size: 0.65em;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;
@@ -103,7 +104,8 @@ const Container = styled.div`
         }
         .Gitcard{
             display: flex;
-            align-items: flex-end;
+            justify-content: flex-end;
+            flex-direction: column;
             padding-left: 20px;
             border: 2px solid #333;
             border-radius: 100px 0px 100px 0px;
@@ -162,7 +164,8 @@ const Container = styled.div`
           font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
             Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-          font-size: 70%;
+          font-size: 50%;
+          margin-left: 200px;
           font-weight: 900;
           line-height: 1.5;
           margin: 0;
@@ -188,8 +191,10 @@ const Container = styled.div`
         #000;
           background: none;
           overflow: hidden;
-          padding: 0.3rem 1rem;
+          padding: 0.3rem 2rem;
           margin: 0px 0px 2px 0px;
+          width: 150px;
+          height: 25px;
           position: relative;
         }
         .btn-24 span {

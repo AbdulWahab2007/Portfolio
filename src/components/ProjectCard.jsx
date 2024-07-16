@@ -74,8 +74,8 @@ const Container = styled.div`
           transition: all .2s;
           h2{
             color: white;
-            margin: 5px 0px 0px 50px;
-            font-size: 1em;
+            margin: 5px 0px 0px 40px;
+            font-size: 0.8em;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;
@@ -86,8 +86,8 @@ const Container = styled.div`
           }
           p{
             color: white;
-            font-size: 0.7em;
-            margin: 0px 0px 0px 50px;
+            font-size: 0.6em;
+            margin: 0px 0px 0px 40px;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 800;
@@ -109,7 +109,7 @@ const Container = styled.div`
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          margin: 0px 0px 0px 50px;
+          margin: 0px 0px 0px 40px;
           padding: 3px 0px 3px 0px;
         }
         .btn-31,
@@ -135,7 +135,7 @@ const Container = styled.div`
           font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
             Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-          font-size: 70%;
+          font-size: 60%;
           font-weight: 900;
           line-height: 1.5;
           margin: 0px 0px 0px 0px;
@@ -159,7 +159,7 @@ const Container = styled.div`
           border-width: 1px;
           padding: 0.15rem 0.22rem;
           margin: 5px 0px 0px 0px;
-          height: 25px;
+          height: 20px;
           position: relative;
           text-transform: uppercase;
         }

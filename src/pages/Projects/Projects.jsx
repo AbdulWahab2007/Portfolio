@@ -31,8 +31,8 @@ export default function Projects() {
             </a>
           </div>
           <div className='ProjectContainer'>
-            <ProjectCard title="Twitter Clone" description="An exact replica of Twitter, offering all its features and functionalities." image="/src/assets/Twitter.png" link='https://github.com/AbdulWahab2007/Twitter-Clone' weblink='#' available='false' />
-            <ProjectCard title="Tic Tac Toe  " description="An authentic recreation of Tic Tac Toe with traditional gameplay mechanics." image="/src/assets/3Ts.png" link='https://github.com/AbdulWahab2007/TicTacToe' weblink='https://3ts.surge.sh' available='true' />
+            <ProjectCard title="Twitter Clone" description="An exact replica of Twitter, offering all its features and functionalities." image="/Twitter.png" link='https://github.com/AbdulWahab2007/Twitter-Clone' weblink='#' available='false' />
+            <ProjectCard title="Tic Tac Toe  " description="An authentic recreation of Tic Tac Toe with traditional gameplay mechanics." image="/3ts.png" link='https://github.com/AbdulWahab2007/TicTacToe' weblink='https://3ts.surge.sh' available='true' />
           </div>
         </Container>
       </AnimatedPage>
@@ -165,7 +165,7 @@ const Container = styled.div`
             margin: 10px 0px 5px 30px;
         }
         h1{
-            font-size: 2em;
+            font-size: 1.6em;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;

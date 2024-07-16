@@ -50,7 +50,7 @@ const Container = styled.div`
                     align-items: center;
                     text-decoration: none;
                     color: #12273b;
-                    font-size: 0.8em;
+                    font-size: 0.6em;
                     font-family: "Nunito", sans-serif;
                     font-optical-sizing: auto;
                     font-weight: 600;
@@ -77,7 +77,7 @@ const Container = styled.div`
                 }
                 h3{
                     margin: 3px 0px 0px 0px;
-                    font-size: 1.4em;
+                    font-size: 1.2em;
                     color: #3d85c6;
                     font-family: "Gulzar", serif;
                     font-weight: 600;

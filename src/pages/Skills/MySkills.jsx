@@ -13,7 +13,7 @@ export default function MySkills() {
             <AnimatedPage>
                 <Container>
                     <div className="ImgContainer">
-                        <img src="/src/assets/skills.png" alt="" />
+                        <img src="/skills.png" alt="" />
                     </div>
                     <div className="content">
                         <p className='greeting'>!السلام و علیکم</p>
@@ -72,7 +72,7 @@ const Container = styled.div`
             margin: 5px 0px 5px 30px;
         }
         h1{
-            font-size: 2em;
+            font-size: 1.6em;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;

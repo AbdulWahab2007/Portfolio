@@ -21,7 +21,7 @@ export default function AboutMe() {
                         <p>I am a 16-year-old aspiring front-end web developer from Gujrat, Pakistan, passionate about crafting engaging digital experiences. Proficient in HTML, CSS, JavaScript, and specializing in React.js, I've honed my skills through creating dynamic projects. Among my notable creations are a Quiz App, News App, and a Calculator. Currently, I am immersed in developing a Twitter Clone, pushing my abilities further to deliver intuitive and user-friendly applications.</p>
                     </div>
                     <div className="ImgContainer">
-                        <img src="/src/assets/AnimeBoy.jpg" alt="" />
+                        <img src="/AnimeBoy.jpg" alt="" />
                     </div>
                 </Container>
             </AnimatedPage>
