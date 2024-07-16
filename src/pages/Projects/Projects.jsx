@@ -1,38 +1,43 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components'
-import ProjectCard from './ProjectCard'
-import AnimatedPage from './AnimatedPage'
+import ProjectCard from '/src/components/ProjectCard'
+import AnimatedPage from '/src/components/AnimatedPage'
+import { Context } from '/src/GlobalContext'
 
 export default function Projects() {
-    return (
-        <>
-            <AnimatedPage>
-                <Container>
-                    <div className="contentContainer">
-                        <p className='greeting'>Hola!</p>
-                        <div className="headings">
-                            <h1>Some of my</h1>
-                            <h1 className='name'>&nbsp;Projects.</h1>
-                        </div>
-                        <p>I've developed three distinct projects: first, a classic TicTacToe game where players strategically place crosses and circles on a 3x3 grid to win; second, a Twitter clone that mirrors the original platform's functionalities, enabling users to create profiles, post tweets, follow others, and engage with content; and third, a comprehensive "Books" website featuring a vast library of diverse genres, allowing users to explore, catering to book enthusiasts seeking new literary adventures or revisiting timeless classics.</p>
-                        <a href="https://github.com/AbdulWahab2007?tab=repositories" target='_blank'>
-                            <button class="btn-37">
-                                <span class="new">On GitHub</span>
-                                <div class="old">
-                                    <span>More Projects</span>
-                                    <span aria-hidden>More Projects</span>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                    <div className='ProjectContainer'>
-                        <ProjectCard title="Twitter Clone" description="An exact replica of Twitter, offering all its features and functionalities." image="/src/assets/Twitter.png" link='https://github.com/AbdulWahab2007/Twitter-Clone' />
-                        <ProjectCard title="Tic Tac Toe  " description="An authentic recreation of Tic Tac Toe with traditional gameplay mechanics." image="/src/assets/3Ts.png" link='https://github.com/AbdulWahab2007/TicTacToe' />
-                    </div>
-                </Container>
-            </AnimatedPage>
-        </>
-    )
+  const { isActive, setIsActive } = useContext(Context);
+  useEffect(() => {
+    setIsActive(2);
+  }, [])
+  return (
+    <>
+      <AnimatedPage>
+        <Container>
+          <div className="contentContainer">
+            <p className='greeting'>Hola!</p>
+            <div className="headings">
+              <h1>Some of my</h1>
+              <h1 className='name'>&nbsp;Projects.</h1>
+            </div>
+            <p>I've developed three distinct projects: first, a classic TicTacToe game where players strategically place crosses and circles on a 3x3 grid to win; second, a Twitter clone that mirrors the original platform's functionalities, enabling users to create profiles, post tweets, follow others, and engage with content; and third, a comprehensive "Books" website featuring a vast library of diverse genres, allowing users to explore, catering to book enthusiasts seeking new literary adventures or revisiting timeless classics.</p>
+            <a href="https://github.com/AbdulWahab2007?tab=repositories" target='_blank'>
+              <button className="btn-37">
+                <span className="new">On GitHub</span>
+                <div className="old">
+                  <span>More Projects</span>
+                  <span aria-hidden>More Projects</span>
+                </div>
+              </button>
+            </a>
+          </div>
+          <div className='ProjectContainer'>
+            <ProjectCard title="Twitter Clone" description="An exact replica of Twitter, offering all its features and functionalities." image="/src/assets/Twitter.png" link='https://github.com/AbdulWahab2007/Twitter-Clone' weblink='#' />
+            <ProjectCard title="Tic Tac Toe  " description="An authentic recreation of Tic Tac Toe with traditional gameplay mechanics." image="/src/assets/3Ts.png" link='https://github.com/AbdulWahab2007/TicTacToe' weblink='https://3ts.surge.sh' />
+          </div>
+        </Container>
+      </AnimatedPage>
+    </>
+  )
 }
 
 const Container = styled.div`

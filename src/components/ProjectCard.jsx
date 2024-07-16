@@ -1,20 +1,31 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
+import { Context } from '/src/GlobalContext'
 
 export default function ProjectCard(props) {
+  const { handleUnavailable } = useContext(Context);
   return (
     <>
       <Container>
         <div className="content">
           <h2>{props.title}</h2>
           <p>{props.description}</p>
-          <a href={props.link} target='_blank'>
-            <button class="btn-31">
-              <span class="text-container">
-                <span class="text">View on GitHub</span>
-              </span>
-            </button>
-          </a>
+          <div className="btnContainer">
+            <a href={props.link} target='_blank'>
+              <button className="btn-31">
+                <span className="text-container">
+                  <span className="text">View on GitHub</span>
+                </span>
+              </button>
+            </a>
+            <a href={props.weblink} target='_blank'>
+              <button className="btn-31">
+                <span className="text-container">
+                  <span className="text">Try It Out ==&gt;</span>
+                </span>
+              </button>
+            </a>
+          </div>
         </div>
         <div className="image" style={{ backgroundImage: `url(${props.image})` }}></div>
       </Container>
@@ -83,7 +94,11 @@ const Container = styled.div`
           text-decoration: none;
           width: 39%;
           padding: 0px;
-          margin: 20px 0px 0px 60px;
+        }
+        .btnContainer{
+          display: flex;
+          justify-content: space-around;
+          margin: 20px 0px 0px 40px;
         }
 //Button is used from UI snippets
 .btn-31,
@@ -131,7 +146,8 @@ transparent;
 }
 .btn-31 {
   border-width: 1px;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.52rem;
+  height: 42px;
   position: relative;
   text-transform: uppercase;
 }

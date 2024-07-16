@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import GlobalCSS from './GlobalCSS'
+import Provider from './GlobalContext'
 import {
   BrowserRouter as Router,
   BrowserRouter,
@@ -9,26 +10,28 @@ import {
   Link,
   Navigate,
 } from "react-router-dom";
-import AboutMe from './components/AboutMe';
-import MySkills from './components/MySkills';
-import Projects from './components/Projects';
-import Contacts from './components/Contacts';
+import AboutMe from './pages/About/AboutMe';
+import MySkills from './pages/Skills/MySkills';
+import Projects from './pages/Projects/Projects';
+import Contacts from './pages/Contact/Contacts';
 
 export default function App() {
   return (
     <>
-      <GlobalCSS />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<AboutMe />}>
-        </Route>
-        <Route path="/skills" element={<MySkills />}>
-        </Route>
-        <Route path="/projects" element={<Projects />}>
-        </Route>
-        <Route path="/contact" element={<Contacts />}>
-        </Route>
-      </Routes>
+      <Provider>
+        <GlobalCSS />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<AboutMe />}>
+          </Route>
+          <Route path="/skills" element={<MySkills />}>
+          </Route>
+          <Route path="/projects" element={<Projects />}>
+          </Route>
+          <Route path="/contact" element={<Contacts />}>
+          </Route>
+        </Routes>
+      </Provider>
     </>
   )
 }

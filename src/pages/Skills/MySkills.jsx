@@ -1,22 +1,27 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components'
-import AnimatedPage from './AnimatedPage'
+import AnimatedPage from '/src/components/AnimatedPage'
+import { Context } from '/src/GlobalContext'
 
-export default function AboutMe() {
+export default function MySkills() {
+    const { isActive, setIsActive } = useContext(Context);
+    useEffect(() => {
+        setIsActive(1);
+    }, [])
     return (
         <>
             <AnimatedPage>
                 <Container>
-                    <div className="content">
-                        <p className='greeting'>Hello!</p>
-                        <div className="headings">
-                            <h1>I'm</h1>
-                            <h1 className='name'>&nbsp;AbdulWahab.</h1>
-                        </div>
-                        <p>I am a 16-year-old aspiring front-end web developer from Gujrat, Pakistan, passionate about crafting engaging digital experiences. Proficient in HTML, CSS, JavaScript, and specializing in React.js, I've honed my skills through creating dynamic projects. Among my notable creations are a Quiz App, News App, and a Calculator. Currently, I am immersed in developing a Twitter Clone, pushing my abilities further to deliver intuitive and user-friendly applications.</p>
-                    </div>
                     <div className="ImgContainer">
-                        <img src="/src/assets/AnimeBoy.jpg" alt="" />
+                        <img src="/src/assets/skills.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <p className='greeting'>!السلام و علیکم</p>
+                        <div className="headings">
+                            <h1>I'm a</h1>
+                            <h1 className='name'>&nbsp;Skilled developer.</h1>
+                        </div>
+                        <p>With over 1.5 years of dedicated learning in programming, I have developed a solid foundation in a variety of essential technologies. My expertise includes CSS for creating stylish and responsive web designs, JavaScript for dynamic and interactive web functionalities, and React JS for building modern and scalable web applications. Additionally, I have mastered P5.js, a JavaScript library renowned for its capabilities in creative coding and animation projects. My journey in programming has not only equipped me with technical proficiency but also a deep appreciation for innovation and problem-solving in software development.</p>
                     </div>
                 </Container>
             </AnimatedPage>
@@ -33,10 +38,15 @@ const Container = styled.div`
             display: flex;
             flex-direction: column;
             width: 55%;
+            margin-right: 10px;
         }
         .greeting{
+          //margin-left: 570px;
             color: black;
             font-size: 30px;
+            font-family: "Gulzar", serif;
+            font-weight: 600;
+            font-style: normal;
         }
         p{
             margin: 10px 0px 10px 50px;
@@ -73,7 +83,8 @@ const Container = styled.div`
             width: 45%;
         }
         img{
-            width: 350px;
+            width: 450px;
             border-radius: 5px;
+            margin-top: -50px;
         }
 `

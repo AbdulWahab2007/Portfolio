@@ -1,37 +1,42 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components'
-import AnimatedPage from './AnimatedPage'
+import AnimatedPage from '/src/components/AnimatedPage'
+import { Context } from '/src/GlobalContext'
 
 export default function Contacts() {
-    return (
-        <>
-            <AnimatedPage>
-                <Container>
-                    <div className="content">
-                        <p className='greeting'>Kon'nichiwa !</p>
-                        <div className="headings">
-                            <h1>Here is my</h1>
-                            <h1 className='name'>&nbsp;Contact Info.</h1>
-                        </div>
-                    </div>
-                    <div className="cardContainer">
-                        <div className="Gitcard">
-                            <p className='address'>GitHub -- AbdulWahab2007</p>
-                            <a target='_blank' href="https://github.com/AbdulWahab2007">
-                                <button class="btn-24"><span>Go to Profile</span></button>
-                            </a>
-                        </div>
-                        <div className="Mailcard">
-                            <p className='address'>Gmail -- abdulwahab020070@gmail.com</p>
-                        </div>
-                    </div>
-                    <footer>
-                        <p>&copy; 2024 Abdul Wahab. All rights reserved.</p>
-                    </footer>
-                </Container>
-            </AnimatedPage>
-        </>
-    )
+  const { isActive, setIsActive } = useContext(Context);
+  useEffect(() => {
+    setIsActive(3);
+  }, [])
+  return (
+    <>
+      <AnimatedPage>
+        <Container>
+          <div className="content">
+            <p className='greeting'>Kon'nichiwa !</p>
+            <div className="headings">
+              <h1>Here is my</h1>
+              <h1 className='name'>&nbsp;Contact Info.</h1>
+            </div>
+          </div>
+          <div className="cardContainer">
+            <div className="Gitcard">
+              <p className='address'>GitHub -- AbdulWahab2007</p>
+              <a target='_blank' href="https://github.com/AbdulWahab2007">
+                <button className="btn-24"><span>Go to Profile</span></button>
+              </a>
+            </div>
+            <div className="Mailcard">
+              <p className='address'>Gmail -- abdulwahab020070@gmail.com</p>
+            </div>
+          </div>
+          <footer>
+            <p>&copy; 2024 Abdul Wahab. All rights reserved.</p>
+          </footer>
+        </Container>
+      </AnimatedPage>
+    </>
+  )
 }
 
 const Container = styled.div`

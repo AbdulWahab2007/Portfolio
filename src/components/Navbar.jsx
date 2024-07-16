@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
+import { Context } from '/src/GlobalContext'
 
 export default function Navbar() {
-    const [isActive, SetisActive] = useState(0);
+    const { isActive, SetisActive } = useContext(Context);
     return (
         <>
             <Container>
@@ -11,10 +12,10 @@ export default function Navbar() {
                     <h3>عبدالوھاب</h3>
                 </div>
                 <div className="right">
-                    <Link onClick={() => SetisActive(0)} className={isActive == 0 ? "links active" : "links"} to="/"><div className="spancontainer"><span class="material-symbols-outlined">person</span></div>About me</Link>
-                    <Link onClick={() => SetisActive(1)} className={isActive == 1 ? "links active" : "links"} to="/skills"><div className="spancontainer"><span class="material-symbols-outlined">engineering</span></div>Skills</Link>
-                    <Link onClick={() => SetisActive(2)} className={isActive == 2 ? "links active" : "links"} to="/projects"><div className="spancontainer"><span class="material-symbols-outlined">dashboard</span></div>Projects</Link>
-                    <Link onClick={() => SetisActive(3)} className={isActive == 3 ? "links active" : "links"} to="/contact"><div className="spancontainer"><span class="material-symbols-outlined">call</span></div>Contact me</Link>
+                    <Link className={isActive == 0 ? "links active" : "links"} to="/"><div className="spancontainer"><span className="material-symbols-outlined">person</span></div>About me</Link>
+                    <Link className={isActive == 1 ? "links active" : "links"} to="/skills"><div className="spancontainer"><span className="material-symbols-outlined">engineering</span></div>Skills</Link>
+                    <Link className={isActive == 2 ? "links active" : "links"} to="/projects"><div className="spancontainer"><span className="material-symbols-outlined">dashboard</span></div>Projects</Link>
+                    <Link className={isActive == 3 ? "links active" : "links"} to="/contact"><div className="spancontainer"><span className="material-symbols-outlined">call</span></div>Contact me</Link>
                 </div>
             </Container>
         </>
