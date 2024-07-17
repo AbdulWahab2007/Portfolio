@@ -38,10 +38,10 @@ const Container = styled.div`
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding: 10px 0px 0px 0px;
+            padding: 2vw 0vw 0vw 0vw;
         }
         img{
-            width: 275px;
+            width: 50vw;
             border-radius: 5px;
         }
         .content{
@@ -52,15 +52,15 @@ const Container = styled.div`
         }
         .greeting{
             color: black;
-            font-size: 1.2em;
+            font-size: 4vw;
             font-family: "Gulzar", serif;
             font-weight: 600;
             font-style: normal;
-            margin: 15px 0px 10px 30px;
+            margin: 2.3vw 0vw 0vw 6vw;
         }
         p{
-            margin: 5px 0px 10px 30px;
-            font-size: 1em;
+            margin: 0vw 6vw 2vw 6vw;
+            font-size: 3vw;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 800;
@@ -69,10 +69,10 @@ const Container = styled.div`
         }
         .headings{
             display: flex;
-            margin: 5px 0px 5px 30px;
+            margin: 1.6vw 0vw 1.6vw 6vw;
         }
         h1{
-            font-size: 1.6em;
+            font-size: 5.8vw;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;

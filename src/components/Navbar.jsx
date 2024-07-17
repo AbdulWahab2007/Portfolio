@@ -29,18 +29,19 @@ const Container = styled.div`
             align-items: center;
             justify-content: center;
             width: 100%;
-            height: 50px;
+            height: 10vw;
             background-color: white;
                 .left{
                     display: flex;
-                    justify-content: center;
                     align-items: center;
                     width: 25%;
-                    height: 50px;
+                    padding-left: 6vw;
+                    height: 10vw;
                 }
                 .right{
                     width: 75%;
-                    height: 50px;
+                    height: 10vw;
+                    padding-right: 4vw;
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
@@ -50,12 +51,12 @@ const Container = styled.div`
                     align-items: center;
                     text-decoration: none;
                     color: #12273b;
-                    font-size: 0.6em;
+                    font-size: 2.32vw;
                     font-family: "Nunito", sans-serif;
                     font-optical-sizing: auto;
                     font-weight: 600;
                     font-style: normal;
-                    margin: 0px 5px 0px 4px;
+                    margin: 0px 2vw 0px 2vw;
                 }
                 .links:hover{
                     text-shadow: 1px 1px 4px #EAEAEA;
@@ -77,7 +78,7 @@ const Container = styled.div`
                 }
                 h3{
                     margin: 3px 0px 0px 0px;
-                    font-size: 1.2em;
+                    font-size: 4.5vw;
                     color: #3d85c6;
                     font-family: "Gulzar", serif;
                     font-weight: 600;

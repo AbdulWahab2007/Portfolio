@@ -48,6 +48,12 @@ const Container = styled.div`
             display: flex;
             flex-direction: column;
             width: 100%;
+            a{
+              width: 32vw;
+              height: 6vw;
+              text-decoration: none;
+              margin: 3vw 0vw 3vw 6vw;
+            }
             .btn-37,
             .btn-37 *,
             .btn-37 :after,
@@ -71,7 +77,7 @@ const Container = styled.div`
               font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
                 Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
                 Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-              font-size: 100%;
+              font-size: 2.2vw;
               font-weight: 900;
               line-height: 1.5;
               margin: 0;
@@ -94,10 +100,13 @@ const Container = styled.div`
             .btn-37 {
               border: 1px solid;
               box-sizing: border-box;
-              display: block;
+              display: flex;
+              align-items: center;
+              justify-content: center;
               overflow: hidden;
               padding: 0.6rem 2rem;
-              margin: 10px 0px 0px 30px;
+              width: 32vw;
+              height: 6vw;
               border-radius: 5px;
               position: relative;
               text-transform: uppercase;
@@ -143,17 +152,14 @@ const Container = styled.div`
               transform: translateY(100%);
             }
         }
-        a{
-          text-decoration: none;
-        }
         .greeting{
             color: black;
-            font-size: 1.2em;
-            margin: 20px 0px 0px 30px;
+            font-size: 4vw;
+            margin: 3vw 6vw 0vw 6vw;
         }
         p{
-            margin: 0px 0px 10px 30px;
-            font-size: 1em;
+            margin: 0vw 6vw 0vw 6vw;
+            font-size: 3vw;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 800;
@@ -162,7 +168,7 @@ const Container = styled.div`
         }
         .headings{
             display: flex;
-            margin: 10px 0px 5px 30px;
+            margin: 1.5vw 6vw 1.5vw 6vw;
         }
         h1{
             font-size: 1.6em;
@@ -200,6 +206,7 @@ const Container = styled.div`
                 margin: 15px 0px 0px 50px;
                 text-decoration: none;
                 width: 159px;
+                text-decoration: none;
             }
             .btn-37,
             .btn-37 *,

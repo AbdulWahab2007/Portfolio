@@ -30,9 +30,6 @@ export default function Contacts() {
               <p className='address'>Gmail -- abdulwahab020070@gmail.com</p>
             </div>
           </div>
-          <footer>
-            <p>&copy; 2024 Abdul Wahab. All rights reserved.</p>
-          </footer>
         </Container>
       </AnimatedPage>
     </>
@@ -47,16 +44,15 @@ const Container = styled.div`
             display: flex;
             flex-direction: column;
             width: 100%;
-            padding-top: 10px;
+            padding-top: 2vw;
         }
         .greeting{
             color: black;
-            font-size: 1.2em;
+            font-size: 4vw;
             margin: 10px 0px 10px 30px;
         }
         p{
-            margin: 5px 0px 10px 30px;
-            font-size: 1em;
+            font-size: 3vw;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 800;
@@ -65,10 +61,10 @@ const Container = styled.div`
         }
         .headings{
             display: flex;
-            margin: 0px 0px 0px 30px;
+            margin: 0vw 0vw 0vw 6vw;
         }
         h1{
-            font-size: 1.6em;
+            font-size: 5.8vw;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;
@@ -83,34 +79,34 @@ const Container = styled.div`
         }
         .address{
             background-color: rgba(4, 52, 94, 0.1);
-            width: 210px;
+            width: 45vw;
             border-radius: 5px;
             user-select: none;
-            margin: 0px 0px 5px 5px;
-            font-size: 0.65em;
+            margin: 0px 0px 1.2vw 5px;
+            font-size: 2.2vw;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;
             font-style: normal;
         }
         .cardContainer{
-            height: 508px;
+            height: 113.6vw;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
             width: 100%;
-            margin: 20px 0px 0px 0px;
+            margin: 4vw 0px 0px 0px;
         }
         .Gitcard{
             display: flex;
             justify-content: flex-end;
             flex-direction: column;
-            padding-left: 20px;
+            padding-left: 2vw;
             border: 2px solid #333;
             border-radius: 100px 0px 100px 0px;
-            width: 85%;
-            height: 200px;
+            width: 80%;
+            height: 40vw;
             background-image: url('https://static.faqabout.me/cover/github-cover.png');
             background-size: cover;
             background-position: center;
@@ -119,27 +115,15 @@ const Container = styled.div`
         .Mailcard{
             display: flex;
             align-items: flex-end;
-            padding-left: 20px;
+            padding-left: 2vw;
             border: 2px solid #333;
             border-radius: 100px 0px 100px 0px;
-            width: 85%;
-            height: 200px;
+            width: 80%;
+            height: 40vw;
             background-image: url('https://9to5google.com/wp-content/uploads/sites/4/2021/06/gmail-cover.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-        }
-        
-        footer {
-            width: 100%;
-            text-align: center;
-            padding: 10px 0;
-            background-color: #04345e;
-            color: #fff;
-            font-family: "Nunito", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 600;
-            font-style: normal;
         }
         .btn-24,
         .btn-24 *,
@@ -164,8 +148,7 @@ const Container = styled.div`
           font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
             Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-          font-size: 50%;
-          margin-left: 200px;
+          font-size: 1.6vw;
           font-weight: 900;
           line-height: 1.5;
           margin: 0;
@@ -191,10 +174,10 @@ const Container = styled.div`
         #000;
           background: none;
           overflow: hidden;
-          padding: 0.3rem 2rem;
-          margin: 0px 0px 2px 0px;
-          width: 150px;
-          height: 25px;
+          padding: 1vw 1vw;
+          width: 30vw;
+          height: 6.4vw;
+          margin: 0vw 0vw 0.2vw 0vw;
           position: relative;
         }
         .btn-24 span {

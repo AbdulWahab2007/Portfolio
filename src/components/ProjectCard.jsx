@@ -12,7 +12,7 @@ export default function ProjectCard(props) {
           <h2>{props.title}</h2>
           <p>{props.description}</p>
           <div className="btnContainer">
-            <Link to={props.link} target='_blank'>
+            <Link className='gitlink' to={props.link} target='_blank'>
               <button className="btn-31">
                 <span className="text-container">
                   <span className="text">View on GitHub</span>
@@ -49,8 +49,8 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         width: 95%;
-        height: 200px;
-        margin: 20px 0px 0px 0px;
+        height: 45vw;
+        margin: 0vw 0vw 4.5vw 0vw;
         border-radius: 200px;
         border: 1px solid #808080;
         transition: all .2s;
@@ -59,7 +59,7 @@ const Container = styled.div`
         }
         .image{
           width: 43%;
-          height: 200px;
+          height: 45vw;
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 0px 200px 200px 0px;
@@ -68,32 +68,32 @@ const Container = styled.div`
           z-index: 100;
           display: flex;
           flex-direction: column;
+          justify-content: center;
           width: 57%;
-          height: 200px;
-          padding-top: 20px;
+          height: 45vw;
           transition: all .2s;
           h2{
             color: white;
-            margin: 5px 0px 0px 40px;
-            font-size: 0.8em;
+            margin: 0vw 0vw 0vw 8vw;
+            font-size: 3.3vw;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;
             font-style: normal;
             width: 50%;
-            padding: 3px;
+            padding: 0.3vw;
             border-radius: 5px;
           }
           p{
             color: white;
-            font-size: 0.6em;
-            margin: 0px 0px 0px 40px;
+            font-size: 2vw;
+            margin: 0vw 0vw 0vw 8vw;
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 800;
             font-style: normal;
             width: 80%;
-            padding: 3px;
+            padding: 0.3vw;
             display: flex;
             justify-content: center;
             border-radius: 5px;
@@ -102,6 +102,13 @@ const Container = styled.div`
         }
         .link{
           display: flex;
+          width: 19vw;
+          text-decoration: none;
+          padding: 0px;
+        }
+        .gitlink{
+          display: flex;
+          width: 19vw;
           text-decoration: none;
           padding: 0px;
         }
@@ -109,7 +116,7 @@ const Container = styled.div`
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          margin: 0px 0px 0px 40px;
+          margin: 0px 0px 0px 8vw;
           padding: 3px 0px 3px 0px;
         }
         .btn-31,
@@ -135,7 +142,7 @@ const Container = styled.div`
           font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
             Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-          font-size: 60%;
+          font-size: 1.6vw;
           font-weight: 900;
           line-height: 1.5;
           margin: 0px 0px 0px 0px;
@@ -157,9 +164,10 @@ const Container = styled.div`
         }
         .btn-31 {
           border-width: 1px;
-          padding: 0.15rem 0.22rem;
-          margin: 5px 0px 0px 0px;
-          height: 20px;
+          padding: 1vw 1vw;
+          margin: 1vw 0px 0px 0px;
+          width: 19vw;
+          height: 4.4vw;
           position: relative;
           text-transform: uppercase;
         }
